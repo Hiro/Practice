@@ -1,35 +1,68 @@
-��GitHub�̓o�^
-�@1)https://github.com/�ɃA�N�Z�X
-�@2)���O�A���[���A�h���X�A�p�X���[�h����͂��uSign up for free�v���N���b�N
-�@3)Free��I�����A�uFinish sign up�v���N���b�N
-�@4)�o�^��������Ƀ��[�����͂��Ă���̂Ń����N���N���b�N
-�@5)�����N��ŁuConfirm�v���N���b�N
-�@6)Toppage�̉E����"New repository"�{�^�����N���b�N
-�@�@Repository name�@���@��肽�����|�W�g����
-�@�@Description�@���@���|�W�g���̐����i�K�v�Ȃ�΁j
-�@�@��"Initialize this repository with a README" �̓`�F�b�N�����Ă����Ǝ�����README.md����������Ԃŏ��������Ă����
+■概要
+GitHubを使った開発環境の導入手順書です。
+Gitクライアントには日本語版が無償公開中の「SourceTree for Windows」を使います。
 
-��SourceTree for Windows
-�@1)http://sourcetreeapp.com/�ɃA�N�Z�X���A�_�E�����[�h
-�@2)�r���̑I�����̓f�t�H���g��OK�I
+■「GitHub（ギットハブ）」
+ソフトウェア開発プロジェクトのための共有ウェブサービスで、Gitバージョン管理システムを使用する。 
+PCにインストールしたバージョン管理ツール（Gitクライアント）を、ネットワーク連動させるサービスと思えばいい。
+有償プランにするとプロジェクトを非公開にできるが、支払いがドルなので少々心理的ハードルはある。
+同様のサービスとして「Google Code」や「Bitbucket（無料版でも非公開利用が可能）」も存在する。
+
+■GitHubにユーザー登録する
+	1) GitHubのウェブサイト「https://github.com/」にアクセスする
+	2) 名前/メールアドレス/パスワードを入力して「Sign up for free」をクリックする
+	3) サービスプランの選択画面で「Free」を選択、「Finish sign up」をクリックする
+	4)登録したアドレスにメールが届いているのでリンクをクリックする
+　5)リンク先で「Confirm」をクリック
+　6)Toppageの右下の"New repository"ボタンをクリック
+　　Repository name　→　作りたいリポジトリ名
+　　Description　→　リポジトリの説明（必要ならば）
+　　※"Initialize this repository with a README" はチェックを入れておくと自動でREADME.mdが入った状態で初期化してくれる
+
+■SourceTree for Windows
+　1)http://sourcetreeapp.com/にアクセスし、ダウンロード
+　2)途中の選択肢はデフォルトでOK！
 
 
-�����|�W�g���̍쐬
-�@1)�V�K/�N���[�����쐬������N���b�N
-�@2)���|�W�g�����N���[����I��
-�@�@���̃p�X/URL�@���@�����[�g���|�W�g���̏ꏊ
-�@�@�ۑ���̃p�X�@���@���[�J�����|�W�g�����쐬����ꏊ
-�@�@�u�b�N�}�[�N���@���@SourceTree��ŕ\������Ƃ��̖��O
-�@�@(��)
-�@�@�@���̃p�X/URL�@���@https://github.com/Hiro/test.git
-�@�@�@�ۑ���̃p�X�@���@C:\Users\H1R0N0\Documents\test
-�@�@�@�u�b�N�}�[�N���@���@test
-�@3)�N���[�����N���b�N
+■リポジトリの作成
+　1)新規/クローンを作成するをクリック
+　2)リポジトリをクローンを選択
+　　元のパス/URL　→　リモートリポジトリの場所
+　　保存先のパス　→　ローカルリポジトリを作成する場所
+　　ブックマーク名　→　SourceTree上で表示するときの名前
+　　(例)
+　　　元のパス/URL　→　https://github.com/Hiro/test.git
+　　　保存先のパス　→　C:\Users\H1R0N0\Documents\test
+　　　ブックマーク名　→　test
+　3)クローンをクリック
 
-���t�@�C�����R�~�b�g����
-�@1)���[�J�����|�W�g�����쐬�����ꏊ�Ƀt�@�C�������(readme.txt�Ȃ�)
-�@2)SourceTree�̍�ƃR�s�[��readme.txt���ǉ������
-�@3)readme.txt�Ƀ`�F�b�N����ƁA�X�e�[�W�����t�@�C���ֈړ�����
-�@�@�����̍�Ƃ��X�e�[�W���O����Ƃ��C���f�b�N�X�ɒǉ�����Ƃ��������肷��炵��
-�@4)�󗓂ɃR�~�b�g���b�Z�[�W����͂��A�E���̃R�~�b�g�{�^�����N���b�N
-�@�@���ύX��orgin/master�ɂ����Ƀv�b�V��������`�F�b�N�����GitHub�֑����f�����
+■ファイルをコミットする
+　1)ローカルリポジトリを作成した場所にファイルを作る(readme.txtなど)
+　2)SourceTreeの作業コピーにreadme.txtが追加される
+　3)readme.txtにチェックすると、ステージしたファイルへ移動する
+　　→この作業をステージングするとかインデックスに追加するとか言ったりするらしい
+　4)空欄にコミットメッセージを入力し、右下のコミットボタンをクリック
+　　※変更をorgin/masterにすぐにプッシュするをチェックするとGitHubへ即反映される
+
+■GitHub Gistで特定のユーザのGistだけを検索する
+検索ボックスに「user:*****」と入力すると"*****"のユーザーが検索できます。
+検索ボックスに「user:***** xxxxx」と入力すると、指定ユーザーのGistから"xxxxx"を検索できます。
+
+■「Gist（https://gist.github.com/）」とは
+GitHubの提供している断片コードの共有サービスのことです。
+下記が特徴です。
+
+○コードの一部（断片）を管理することができる。
+複数ファイルをまとめて管理しているリポジトリとは違い、
+1ファイル/１クラス/コードの一部分のみなどをバージョン管理ができます。
+ひとつのファイルで簡潔する場合はGistでもよいみたいです。
+
+ブログ等に簡単に貼付けることができる
+通常のバージョン管理とは違いGistで管理しているコードは、ブログ等の他のサイトに公開することができます。
+
+バージョン管理ができる
+
+Forkができる
+他の人のコードを自分の所にコピーできる(Fork)
+
+リモートリポジトリとして使用できる

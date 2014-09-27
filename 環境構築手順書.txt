@@ -1,0 +1,35 @@
+■GitHubの登録
+　1)https://github.com/にアクセス
+　2)名前、メールアドレス、パスワードを入力し「Sign up for free」をクリック
+　3)Freeを選択し、「Finish sign up」をクリック
+　4)登録した宛先にメールが届いているのでリンクをクリック
+　5)リンク先で「Confirm」をクリック
+　6)Toppageの右下の"New repository"ボタンをクリック
+　　Repository name　→　作りたいリポジトリ名
+　　Description　→　リポジトリの説明（必要ならば）
+　　※"Initialize this repository with a README" はチェックを入れておくと自動でREADME.mdが入った状態で初期化してくれる
+
+■SourceTree for Windows
+　1)http://sourcetreeapp.com/にアクセスし、ダウンロード
+　2)途中の選択肢はデフォルトでOK！
+
+
+■リポジトリの作成
+　1)新規/クローンを作成するをクリック
+　2)リポジトリをクローンを選択
+　　元のパス/URL　→　リモートリポジトリの場所
+　　保存先のパス　→　ローカルリポジトリを作成する場所
+　　ブックマーク名　→　SourceTree上で表示するときの名前
+　　(例)
+　　　元のパス/URL　→　https://github.com/Hiro/test.git
+　　　保存先のパス　→　C:\Users\H1R0N0\Documents\test
+　　　ブックマーク名　→　test
+　3)クローンをクリック
+
+■ファイルをコミットする
+　1)ローカルリポジトリを作成した場所にファイルを作る(readme.txtなど)
+　2)SourceTreeの作業コピーにreadme.txtが追加される
+　3)readme.txtにチェックすると、ステージしたファイルへ移動する
+　　→この作業をステージングするとかインデックスに追加するとか言ったりするらしい
+　4)空欄にコミットメッセージを入力し、右下のコミットボタンをクリック
+　　※変更をorgin/masterにすぐにプッシュするをチェックするとGitHubへ即反映される
